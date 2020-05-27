@@ -16,9 +16,9 @@ docker-compose run --rm npm run dev
 
 docker-compose run --rm artisan migrate
 
-docker-compose run -rm artisan db:seed --class=UserSeeder
+docker-compose run --no-deps artisan db:seed --class=UserSeeder
 
-docker-compose run -rm artisan db:seed --class=UseraccessSeeder
+docker-compose run --no-deps artisan db:seed --class=UseraccessSeeder
 
 docker-compose run --rm nginx chmod -R 777 /var/www/html/storage/
 
