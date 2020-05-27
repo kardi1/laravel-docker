@@ -21,3 +21,5 @@ docker-compose run -rm artisan db:seed --class=UserSeeder
 docker-compose run -rm artisan db:seed --class=UseraccessSeeder
 
 docker-compose run --rm nginx chmod -R 777 /var/www/html/storage/
+
+acessar http://localhost:8080/
